@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>male</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MALE - Space Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+<body oncontextmenu="return false;">
+
+    <div id="world"></div>
+    <br><br><br><br><br>
+    <div class="container">
+        <header>
+            <h1 class="main-title">MALE</h1>
+        </header>
+
+        <section class="astronaut-view">
+            <div class="glow-circle"></div>
+            <img src="https://xatimg.com/image/u49UfyETY7Kh.png" alt="Astronaut" draggable="false" class="astronaut-img">
+        </section>
+        <br><br>
+        <nav class="action-buttons">
+            <button class="btn" onclick="openTab(event, 'about')">MUSIC</button>
+            <button class="btn active" onclick="openTab(event, 'blog')">ABOUT</button>
+            <button class="btn" onclick="openTab(event, 'gallery')">GALLERY</button>
+        </nav>
+
+        <div id="about" class="tab-content">
+            <h2 style="font-size: 1rem; color: var(--neon-green);">[ Escuchando... ]</h2>
+            <p><strong>Tomas pa' olvidar</strong> - Tony Dize</p>
+            <center>
+                <video id="musicVideo" width="330" height="210" autoplay loop controls style="border: 1px solid var(--neon-green);">
+                    <source src="assets/male.mp4" type="video/mp4">
+                </video>
+            </center>
+        </div>
+
+        <div id="blog" class="tab-content active">
+            <h2 style="font-size: 1rem; color: var(--neon-green);">[ Caracas - Venezuela ]</h2>
+            <p><strong>Enamórate de ti,</strong> de la vida, y luego de quién tú quieras.</p>
+        </div>
+
+        <div id="gallery" class="tab-content">
+            <h2 style="font-size: 1rem; color: var(--neon-green);">[ 💚 ]</h2>
+            <div class="gallery-grid">
+                <div class="contenedor-imagen">
+                    <img src="https://xatimg.com/image/S1fX1TE8gNzx.png" draggable="false" onclick="openImage(this.src)">
+                </div>
+                <div class="contenedor-imagen">
+                    <img src="https://xatimg.com/image/z6zz3crY3BM9.png" draggable="false" onclick="openImage(this.src)">
+                </div>
+                <div class="contenedor-imagen">
+                    <img src="https://xatimg.com/image/iNF6YWMaIKrh.png" draggable="false" onclick="openImage(this.src)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="imgFull" draggable="false">
+    </div>
+
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
